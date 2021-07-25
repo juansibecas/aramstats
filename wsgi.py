@@ -1,6 +1,5 @@
 from flask import Flask, request, render_template, session, redirect
 from markupsafe import escape
-from apiget import run
 import os
 import pandas as pd
 app = Flask(__name__)
