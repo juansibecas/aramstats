@@ -1,7 +1,7 @@
 import json
 import pandas as pd
 
-with open('E:/Escritorio/python/champion.json', 'r',encoding="utf8") as f:
+with open('champion.json', 'r',encoding="utf8") as f:
     championsData=f.read()
     championsData=json.loads(championsData)
 
