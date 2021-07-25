@@ -7,7 +7,7 @@ import pandas as pd
 
 
 
-api_key = 'RGAPI-e3f37c4b-7648-4790-8aa1-ab93e39005fd'
+api_key = 'RGAPI-9cca7378-8649-4c8b-99ba-06c70b1f0801'
 watcher = LolWatcher(api_key)
 region = 'la2'
 
@@ -25,9 +25,11 @@ def get_players(name_list):
 def get_match_ids(ammount_to_analyze, players): #puts all match ids in one list
     matches = []
     match_ids = []
+    ammount = ammount_to_analyze
     for _, player in players.items():
+        ammount_to_analyze = ammount
         len1 = len(matches)
-        acc_id = player['accountId']
+        acc_id = player.account_id
         counter = 0
         begin_index = 0
         if ammount_to_analyze < 100:
@@ -88,9 +90,9 @@ def get_k_duplicates(temp_1, k):
     lst = []
     temp_2 = remove_duplicates(temp_1)
     
-    for element_1 in temp_1:
+    for element_1 in temp_2:
         counter=0
-        for element_2 in temp_2:
+        for element_2 in temp_1:
             if element_1 == element_2:
                 counter+=1
             if counter==k:
@@ -115,40 +117,33 @@ def create_match_from_file(match_file):
 
 def run():
     cwd = os.getcwd()
-    summoner_names = ["Retrodonte", "impall", "Nakkël", "Røku", "Yone Biden", "FOLININPISIS", "Sikkario", "Braelan", "ryoth2"]
-    
+    summoner_names = ["Retrodonte", "impall", "Nakkël", "Røku", "Yone Biden", "FOLININPISIS", "Sikkario", "Braelan", "ryoth2", "Cubita"]
+
     """READ"""
+    
     #READ PLAYERS
     players = {}
     for name in summoner_names:
         with open(f'{cwd}/players/{name}.json', 'r', encoding="utf8") as f:
             player_file = json.load(f)
         players[name] = create_player_from_file(player_file)
+    
     #READ MATCH IDS
     match_ids = []
     with open(f'{cwd}/matchids.txt', 'r', encoding="utf8") as f:
         lines = f.readlines()
         for line in lines:
             match_ids.append(int(line))
-    #READ MATCHES' DETAIL AND TIMELINE
+    
+    #READ MATCH DETAILS AND TIMELINES
     matches = {}
     for match_id in match_ids:
-        with open(f'{cwd}/matches/{match_id}.json', 'r', encoding="utf8") as f:
+        with open(f'E:\Escritorio\python\Projects\AramStats\matches\{match_id}.json', 'r', encoding="utf8") as f:
             match_file = json.load(f)
         matches[str(match_id)] = create_match_from_file(match_file)
+      
     
-    
-    
-    
-    
-    
-    """     ADD NEW MATCH
-    new_id = 770875393     
-    new_detail, new_timeline = get_from_api(new_id)
-    new_match = Match(new_id, new_detail, new_timeline)
-    with open(f'{cwd}/matches/{new_id}.json', 'w', encoding="utf8") as f:
-            f.write(new_match.toJSON())"""
-       
+    #ANALYZE AND SAVE DATAFRAMES
     for match_id, match in matches.items():
         analyze_match(match, players)        
     
@@ -163,17 +158,6 @@ def run():
     players_table = pd.DataFrame(players_table)
     
     
-    
-    """
-    #WRITE
-    for name, player in players.items():
-        with open(f'{cwd}/players/{name}.json', 'w', encoding="utf8") as f:
-            f.write(player.toJSON())"""
-           
-    for match_id, match in matches.items():
-        with open(f'{cwd}/matches/{match_id}.json', 'w', encoding="utf8") as f:
-            f.write(match.toJSON())
-    
     players_table.to_csv(f'{cwd}/dataframes/allplayers.csv', index=False)
     for player, by_champ_table in by_champ_tables.items():
         by_champ_table.to_csv(f'{cwd}/dataframes/{player}.csv', index=False)
@@ -183,5 +167,5 @@ def run():
 
     
 if __name__ == '__main__':
-    champ_tables, players_table = run()
-    
+    #champ_tables, players_table = run()
+    run()

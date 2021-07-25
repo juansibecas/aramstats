@@ -1,0 +1,24 @@
+{
+    "account_id": "dayPTCdv0HdQykM1EA_uNZY_1UZsEt_5Bd4LOW4Y8TGJ",
+    "champion_stats": {},
+    "id": "iQmu9Ha9-OjxtVscft_beOAXT7D9OQiopaUgSykWTc5N6g",
+    "puuid": "T6FMq9HYuvpqNe8q85L4aD6shYCkdTTqpc9NP5dkP64C3No1Z7w9eFy06LczwzQatP3hbG8ZDnStbg",
+    "stats": {
+        "assists": 0,
+        "cs": 0,
+        "damage": 0,
+        "damage_percent": 0,
+        "deaths": 0,
+        "fb": 0,
+        "games": 0,
+        "gold": 0,
+        "gold_percent": 0,
+        "kda": 0,
+        "kills": 0,
+        "last_champ_used": 0,
+        "last_game_damage": 0,
+        "last_game_gold": 0,
+        "time_in_minutes": 0
+    },
+    "summoner": "Cubita"
+}
