@@ -1,0 +1,8 @@
+<!doctype html>
+{% if name %}
+    <title>{{name}} ARAM Stats</title>
+    {% for table in tables %}
+                {{titles[loop.index]}}
+                {{ table|safe }}
+    {% endfor %}
+{% endif %}

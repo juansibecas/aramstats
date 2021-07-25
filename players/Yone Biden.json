@@ -1,0 +1,24 @@
+{
+    "account_id": "ng_TuLJ4JatsChtyd3PGxFGNvmU6wL7di6EGsqgjAFY",
+    "champion_stats": {},
+    "id": "nG9Inau5uVmUuD3nsJizpQkAoUgHvBJQtLxK2oObbZ7x",
+    "puuid": "YDC2cH8vXCpoeZ-mfE0u79f08rZpOWHA2QL9U7iJ9GleI2Fv_Zi6gylFDkaUkqNqbrdnWQUAutCffg",
+    "stats": {
+        "assists": 0,
+        "cs": 0,
+        "damage": 0,
+        "damage_percent": 0,
+        "deaths": 0,
+        "fb": 0,
+        "games": 0,
+        "gold": 0,
+        "gold_percent": 0,
+        "kda": 0,
+        "kills": 0,
+        "last_champ_used": 0,
+        "last_game_damage": 0,
+        "last_game_gold": 0,
+        "time_in_minutes": 0
+    },
+    "summoner": "Yone Biden"
+}

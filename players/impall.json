@@ -1,0 +1,24 @@
+{
+    "account_id": "mUJOnNhAKjJedx9kUq20YG9FRGBeNt7B26bkas-TOC30H50",
+    "champion_stats": {},
+    "id": "hqwM0-FHgZaJWPwW4ic6OmyF8--bpLfATDx-uu7__GbnHj8",
+    "puuid": "zZG30DmkQkwJ58Vg0KAdVyoTJmD-b5CJpShImg7vblPYX8A9j0nrcLWhcCO0uqqF6TBgX2_XXUCi6g",
+    "stats": {
+        "assists": 0,
+        "cs": 0,
+        "damage": 0,
+        "damage_percent": 0,
+        "deaths": 0,
+        "fb": 0,
+        "games": 0,
+        "gold": 0,
+        "gold_percent": 0,
+        "kda": 0,
+        "kills": 0,
+        "last_champ_used": 0,
+        "last_game_damage": 0,
+        "last_game_gold": 0,
+        "time_in_minutes": 0
+    },
+    "summoner": "impall"
+}

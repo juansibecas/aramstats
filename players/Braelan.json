@@ -1,0 +1,24 @@
+{
+    "account_id": "tN3KQ69d37aa1f6nzQEElkfx9kIkTUMHQKPedqCALXk",
+    "champion_stats": {},
+    "id": "vo1rOKZU7HM06QBcP68ynZ7hHG7jNQ3iVfk4Gc_hfYo2",
+    "puuid": "gX7XjVnXqPZiQ7cOOxr46vZiLWlBa3KtG9NJ7C6JExrFAoHf246sTo-xz9rB0nH1RcKb1S4vsSyqZw",
+    "stats": {
+        "assists": 0,
+        "cs": 0,
+        "damage": 0,
+        "damage_percent": 0,
+        "deaths": 0,
+        "fb": 0,
+        "games": 0,
+        "gold": 0,
+        "gold_percent": 0,
+        "kda": 0,
+        "kills": 0,
+        "last_champ_used": 0,
+        "last_game_damage": 0,
+        "last_game_gold": 0,
+        "time_in_minutes": 0
+    },
+    "summoner": "Braelan"
+}

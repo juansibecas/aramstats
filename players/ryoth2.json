@@ -1,0 +1,24 @@
+{
+    "account_id": "K9B1ddOcIfdQl4ALbyQL8uwWDljZ4m96aBOfapfpyB8",
+    "champion_stats": {},
+    "id": "BSDI_XD4lY4eUmpgl5S-CGNcAlCORpG_6za2atLD67pS",
+    "puuid": "H6LCLTHu4M0MJ1fAufKfOe4rgVhAxHy1YmMvMeHt_8ALF0LN7cJFwyjwPtbwmXji6SuSz2Sa4eNPlw",
+    "stats": {
+        "assists": 0,
+        "cs": 0,
+        "damage": 0,
+        "damage_percent": 0,
+        "deaths": 0,
+        "fb": 0,
+        "games": 0,
+        "gold": 0,
+        "gold_percent": 0,
+        "kda": 0,
+        "kills": 0,
+        "last_champ_used": 0,
+        "last_game_damage": 0,
+        "last_game_gold": 0,
+        "time_in_minutes": 0
+    },
+    "summoner": "ryoth2"
+}

@@ -1,0 +1,24 @@
+{
+    "account_id": "yCKOWZ6CCZZYqeXcmJYln8UkJzKGxFoovTWJzRkm0LA",
+    "champion_stats": {},
+    "id": "iCwaj1bYsVY2NtBQ04b7mMOaO2avz5gra1H3YqcgaCPL",
+    "puuid": "AqYPjpkCL9bgnD2S-Zm1NYXLOEqqyhS-NB-cG9Js6qwbYzBUCljlUZeZid24Y9OA8yjLfnvP8tEi1Q",
+    "stats": {
+        "assists": 0,
+        "cs": 0,
+        "damage": 0,
+        "damage_percent": 0,
+        "deaths": 0,
+        "fb": 0,
+        "games": 0,
+        "gold": 0,
+        "gold_percent": 0,
+        "kda": 0,
+        "kills": 0,
+        "last_champ_used": 0,
+        "last_game_damage": 0,
+        "last_game_gold": 0,
+        "time_in_minutes": 0
+    },
+    "summoner": "R\u00f8ku"
+}

@@ -1,0 +1,24 @@
+{
+    "account_id": "e2MRUvewl4TBTMIZXrHYoaQnnTZPKvV9vQmvfv1C3zgW000",
+    "champion_stats": {},
+    "id": "zlLmeK2d_mbujKJbnvqEiV9SCP-dJFonwJHYzj5spEBf-lQ",
+    "puuid": "Ek5xv0aHuK6NLh8P5XDm6qkMs790ETUHWQ4_2G-lvYBP4NHkLW8Tbgmf3Pfo85_iyVBEmLdJ4LuWew",
+    "stats": {
+        "assists": 0,
+        "cs": 0,
+        "damage": 0,
+        "damage_percent": 0,
+        "deaths": 0,
+        "fb": 0,
+        "games": 0,
+        "gold": 0,
+        "gold_percent": 0,
+        "kda": 0,
+        "kills": 0,
+        "last_champ_used": 0,
+        "last_game_damage": 0,
+        "last_game_gold": 0,
+        "time_in_minutes": 0
+    },
+    "summoner": "Sikkario"
+}
