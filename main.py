@@ -6,7 +6,7 @@ import pandas as pd
 app = Flask(__name__)
 cwd = os.getcwd()
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/')
 def main():
     players_table = pd.read_csv(f'{cwd}/dataframes/allplayers.csv')
     return render_template('aram.html',  tables=[players_table.to_html(classes='data')], titles=players_table.columns.values)
