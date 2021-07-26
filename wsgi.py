@@ -5,13 +5,17 @@ import pandas as pd
 app = Flask(__name__)
 cwd = os.getcwd()
 
+
 @app.route('/')
 def main():
     players_table = pd.read_csv(f'{cwd}/dataframes/allplayers.csv')
-    return render_template('aram.html',  tables=[players_table.to_html(classes='data')])
+    table = [players_table.to_html(border=3)]
+    return render_template('aram.html',  tables=table)
 
 
 @app.route('/<name>')
 def userpage(name=None):
     by_champ_table = pd.read_csv(f'{cwd}/dataframes/{name}.csv')
-    return render_template('userpage.html',  tables=[by_champ_table.to_html(classes='data')], name=name)
+    table = [by_champ_table.to_html()]
+    return render_template('userpage.html',  tables=table, name=name)
+
