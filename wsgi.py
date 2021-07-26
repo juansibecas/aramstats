@@ -8,10 +8,10 @@ cwd = os.getcwd()
 @app.route('/')
 def main():
     players_table = pd.read_csv(f'{cwd}/dataframes/allplayers.csv')
-    return render_template('aram.html',  tables=[players_table.to_html(classes='data')], titles="Lig o' Leyens ARAM Stats")
+    return render_template('aram.html',  tables=[players_table.to_html(classes='data')])
 
 
 @app.route('/<name>')
 def userpage(name=None):
     by_champ_table = pd.read_csv(f'{cwd}/dataframes/{name}.csv')
-    return render_template('userpage.html',  tables=[by_champ_table.to_html(classes='data')], titles=f'{name} ARAM Stats', name=name)
+    return render_template('userpage.html',  tables=[by_champ_table.to_html(classes='data')], name=name)
