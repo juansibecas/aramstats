@@ -172,5 +172,4 @@ def run():
 
     
 if __name__ == '__main__':
-    #champ_tables, players_table = run()
-    run()
+    champ_tables, players_table = run()
