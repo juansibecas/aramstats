@@ -14,6 +14,9 @@ region = 'la2'
 def remove_duplicates(lst):
     return list(set(lst))
 
+def sort_table_by_games(row):
+    return row['games']
+
 ######################### API #######################################
 def get_players(name_list):
     players = {}
@@ -155,7 +158,9 @@ def run():
         player.create_dataframes()
         by_champ_tables[name] = player.player_table
         players_table.append(player.player_row)
+    players_table.sort(reverse=True, key=sort_table_by_games)
     players_table = pd.DataFrame(players_table)
+    
     
     
     players_table.to_csv(f'{cwd}/dataframes/allplayers.csv', index=False)
